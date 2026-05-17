@@ -1,0 +1,17 @@
+version: "3"
+services:
+  cs-415-ubuntu:
+    build: ./ubuntu
+    image: image_cs415_ubuntu
+    container_name: container_cs415_ubuntu
+    restart: always
+    stdin_open: true
+    tty: true
+
+  cs-415-ubuntu-myuser:
+    build: ./ubuntu-myuser
+    image: image_cs415_ubuntu_myuser
+    container_name: container_cs415_ubuntu_myuser
+    restart: always
+    stdin_open: true
+    tty: true
